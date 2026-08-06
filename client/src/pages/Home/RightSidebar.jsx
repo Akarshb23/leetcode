@@ -2,7 +2,7 @@ import React from 'react'
 import Trophy from "../../assets/images/trophy.png"
 import Msg from "../../assets/images/msg.png"
 import Coin from "../../assets/images/coin.png"
-import LC1 from "../../assets/images/LClight.jpg"
+import Banner from "../../assets/images/banner.png"
 
 function FeedSection() {
   return (
@@ -10,7 +10,7 @@ function FeedSection() {
 
 
       <img
-        src={LC1}
+        src={Banner}
         alt="Banner"
         className="w-full rounded-lg mb-6"
       />
@@ -28,7 +28,7 @@ function FeedSection() {
           </h3>
 
           <button
-            className="px-5 py-2 bg-surface rounded-lg hover:bg-background-secondary transition"
+            className="px-5 py-2 bg-surface rounded-lg text-text-secondary hover:bg-background-secondary transition"
           >
             Join Contest
           </button>
@@ -59,7 +59,7 @@ function FeedSection() {
           </h3>
 
           <button
-            className="px-5 py-2 bg-surface rounded-lg hover:bg-background-secondary transition"
+            className="px-5 py-2 bg-surface text-text-secondary rounded-lg hover:bg-background-secondary transition"
           >
             Let's Discuss
           </button>
@@ -87,7 +87,7 @@ function FeedSection() {
           
 
           <button
-            className="px-5 py-2 bg-surface rounded-lg hover:bg-background-secondary transition"
+            className="px-5 py-2 bg-surface text-text-secondary rounded-lg hover:bg-background-secondary transition"
           >
             Redeem
           </button>
