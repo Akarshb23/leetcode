@@ -7,7 +7,7 @@ function DropDown() {
     <div className="relative inline-block">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-medium text-white cursor-pointer"
+        className="flex h-8 w-8 items-center justify-center rounded-full bg-[#ffa116] text-sm font-medium text-[#1a1a1a] cursor-pointer"
       >
         A
       </button>

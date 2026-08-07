@@ -10,9 +10,9 @@ function Theme() {
       className="flex h-9 w-9 items-center justify-center rounded-md"
     >
       {darkMode ? (
-        <Sun size={20} className="text-[#f7c948]" />
+        <Sun size={18} className="text-[#f7c948]" />
       ) : (
-        <Moon size={20} className="text-zinc-300" />
+        <Moon size={18} className="text-[#d9d9d9]" />
       )}
     </button>
   );

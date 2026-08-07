@@ -6,24 +6,24 @@ import Banner from "../../assets/images/banner.png";
 
 function RightSidebar() {
   return (
-    <div className="rounded-lg border border-border bg-surface p-4">
+    <div className="rounded-lg border border-[rgba(255,255,255,0.07)] bg-[#262626] p-4">
       <img
         src={Banner}
         alt="Banner"
-        className="mb-3 w-full rounded-lg"
+        className="mb-3 w-full rounded"
       />
 
-      <div className="flex items-center justify-between border-b border-border py-3">
-        <div className="space-y-2">
-          <h2 className="text-[16px] font-medium text-text-primary">
+      <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.05)] py-3">
+        <div className="space-y-1.5">
+          <h2 className="text-[15px] font-medium text-white">
             LeetCode Contest
           </h2>
 
-          <p className="text-sm leading-5 text-text-secondary">
+          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
             Participate and win prizes.
           </p>
 
-          <button className="rounded-[3px] bg-background-secondary px-4 py-2 text-sm text-text-secondary">
+          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
             Join Contest
           </button>
         </div>
@@ -31,26 +31,26 @@ function RightSidebar() {
         <img
           src={Trophy}
           alt="Trophy"
-          className="h-20 w-20 object-contain"
+          className="h-16 w-16 object-contain"
         />
       </div>
 
 
-      <div className="flex items-center justify-between border-b border-border py-3">
-        <div className="space-y-2">
-          <h2 className="text-[16px] font-medium text-text-primary">
+      <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.05)] py-3">
+        <div className="space-y-1.5">
+          <h2 className="text-[15px] font-medium text-white">
             Discuss Now
           </h2>
 
-          <p className="text-sm leading-5 text-text-secondary">
+          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
             Share interview questions.
           </p>
 
-          <p className="text-sm leading-5 text-text-secondary">
+          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
             Get solutions.
           </p>
 
-          <button className="rounded-[3px] bg-background-secondary px-4 py-2 text-sm text-text-secondary">
+          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
             Let's Discuss
           </button>
         </div>
@@ -58,22 +58,22 @@ function RightSidebar() {
         <img
           src={Msg}
           alt="Message"
-          className="h-20 w-20 object-contain"
+          className="h-16 w-16 object-contain"
         />
       </div>
 
       {/* LeetCoins */}
       <div className="flex items-center justify-between py-3">
-        <div className="space-y-2">
-          <h2 className="text-[16px] font-medium text-text-primary">
+        <div className="space-y-1.5">
+          <h2 className="text-[15px] font-medium text-white">
             Shop with LeetCoins
           </h2>
 
-          <p className="text-sm leading-5 text-text-secondary">
+          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
             Use your points in our LeetCode Store.
           </p>
 
-          <button className="rounded-[3px] bg-background-secondary px-4 py-2 text-sm text-text-secondary">
+          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
             Redeem
           </button>
         </div>
@@ -81,7 +81,7 @@ function RightSidebar() {
         <img
           src={Coin}
           alt="Coin"
-          className="h-20 w-20 object-contain"
+          className="h-16 w-16 object-contain"
         />
       </div>
     </div>

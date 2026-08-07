@@ -9,7 +9,7 @@ function MainLayout() {
     <div className="min-h-screen bg-[#1a1a1a] text-white">
       <Navbar />
 
-      <main className="mx-auto min-h-[calc(100vh-64px)] max-w-[1200px] px-6">
+      <main className="mx-auto min-h-[calc(100vh-64px)] max-w-[1280px] px-6">
         <Outlet />
       </main>
 

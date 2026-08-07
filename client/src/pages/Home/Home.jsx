@@ -4,8 +4,8 @@ import FeedSection from "./FeedSection";
 
 function Home() {
   return (
-    <div className="mx-auto max-w-[1200px] px-6 py-6">
-      <div className="flex items-start gap-6">
+    <div className="mx-auto max-w-[1280px] px-6 py-6">
+      <div className="flex items-start gap-5">
         {/* Feed */}
         <div className="flex-1 min-w-0">
           <FeedSection />
