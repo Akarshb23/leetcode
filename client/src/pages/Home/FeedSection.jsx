@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  FaTrophy,
-  FaUserCircle,
-} from "react-icons/fa";
+import { FaTrophy, FaUserCircle } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const feed = [
@@ -50,54 +47,56 @@ const feed = [
 
 function FeedSection() {
   return (
-    <div className="w-full rounded-xl  bg-[#1a1a1a] overflow-hidden ">
+    <div className="overflow-hidden rounded-lg bg-[#1a1a1a]">
       {feed.map((item, index) => (
         <div
           key={index}
-          className={`flex gap-5 p-6 text-sm ${
-            index !== feed.length - 1 ? "border-b border-zinc-800" : ""
+          className={`flex gap-4 px-6 py-5 ${
+            index !== feed.length - 1 ? "border-b border-[rgba(255,255,255,0.05)]" : ""
           }`}
         >
-        
           <div className="flex-shrink-0 pt-1">
             {item.type === "contest" ? (
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2a2a2a]">
-                <FaTrophy className="text-3xl text-yellow-400" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#2b2b2b]">
+                <FaTrophy className="text-[18px] text-yellow-400" />
               </div>
             ) : item.type === "leetcode" ? (
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black">
-                <SiLeetcode className="text-2xl text-orange-500" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#111111]">
+                <SiLeetcode className="text-[17px] text-orange-500" />
               </div>
             ) : (
-              <FaUserCircle className="text-5xl text-gray-400" />
+              <FaUserCircle className="text-[36px] text-zinc-500" />
             )}
           </div>
 
-          {/* Content */}
           <div className="flex-1">
-            <p className="text-sm text-gray-500">{item.time}</p>
+            <p className="text-xs text-text-muted">
+              {item.time}
+            </p>
 
             {item.type === "contest" ? (
-              <h3 className="mt-1 text-xl text-white">
+              <h3 className="mt-1 text-[18px] font-medium leading-7 text-text-primary">
                 {item.title}{" "}
-                <span className="cursor-pointer text-[#3b82f6] hover:underline">
+                <span className="cursor-pointer text-[#3b82f6]">
                   {item.highlight}
                 </span>
               </h3>
             ) : (
               <>
-                <h3 className="mt-1 text-xl">
-                  <span className="text-[#3b82f6] cursor-pointer hover:underline">
+                <h3 className="mt-1 text-[17px] font-medium leading-7">
+                  <span className="cursor-pointer text-[#3b82f6]">
                     {item.author}
                   </span>{" "}
-                  <span className="text-gray-300">posted</span>{" "}
-                  <span className="cursor-pointer text-[#3b82f6] hover:underline">
+                  <span className="text-text-secondary">
+                    posted
+                  </span>{" "}
+                  <span className="cursor-pointer text-[#3b82f6]">
                     {item.title}
                   </span>
                 </h3>
 
                 {item.desc && (
-                  <p className="mt-3 max-w-4xl leading-8 text-gray-300">
+                  <p className="mt-2 text-[15px] leading-6 text-[#b3b3b3]">
                     {item.desc}
                   </p>
                 )}

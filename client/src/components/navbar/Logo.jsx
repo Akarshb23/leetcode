@@ -13,10 +13,10 @@ function Logo() {
       <img
         src={LC}
         alt="LeetCode Logo"
-        className="h-10 w-auto object-contain"
+        className="h-8 w-auto object-contain"
       />
 
-      <h1 className="text-xl font-bold text-text-primary">
+      <h1 className="text-[22px] font-bold text-text-primary">
         LeetCode
       </h1>
     </Link>

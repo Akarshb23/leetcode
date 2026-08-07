@@ -4,15 +4,17 @@ import FeedSection from "./FeedSection";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-[#1a1a1a] text-white">
-      <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto max-w-[1200px] px-6 py-6">
+      <div className="flex items-start gap-6">
+        {/* Feed */}
         <div className="flex-1 min-w-0">
           <FeedSection />
         </div>
 
-        <div className="hidden lg:block w-80">
+        {/* Right Sidebar */}
+        <aside className="hidden lg:block w-[300px] flex-shrink-0">
           <RightSidebar />
-        </div>
+        </aside>
       </div>
     </div>
   );

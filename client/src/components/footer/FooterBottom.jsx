@@ -2,8 +2,10 @@ import React from "react";
 
 function FooterBottom() {
   return (
-    <div className="border-t border-border pt-6 text-center text-sm text-text-muted">
-      <p>© {new Date().getFullYear()} LeetCode. Built with React.</p>
+    <div className="border-t border-[#2e2e2e] py-4">
+      <p className="text-xs text-[#7d7d7d]">
+        Copyright © 2026 LeetCode
+      </p>
     </div>
   );
 }

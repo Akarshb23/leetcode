@@ -7,12 +7,12 @@ function Theme() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="flex h-10 w-10 items-center justify-center rounded-lg bg-surface hover:bg-background-secondary transition-colors"
+      className="flex h-9 w-9 items-center justify-center rounded-md"
     >
       {darkMode ? (
-        <Sun className="text-yellow-400" size={20} />
+        <Sun size={20} className="text-[#f7c948]" />
       ) : (
-        <Moon className="text-text-primary" size={20} />
+        <Moon size={20} className="text-zinc-300" />
       )}
     </button>
   );
