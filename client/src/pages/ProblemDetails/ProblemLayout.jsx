@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function ProblemLayout() {
-  return (
-    <div>
-      
-    </div>
-  )
+function ProblemLayout({ children }) {
+  return <div className="space-y-5">{children}</div>;
 }
 
-export default ProblemLayout
+export default ProblemLayout;

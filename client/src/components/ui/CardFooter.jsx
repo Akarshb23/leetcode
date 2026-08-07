@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function CardFooter() {
+function CardFooter({ className = "", children }) {
   return (
-    <div>
-      
+    <div
+      className={`border-t border-border px-4 py-3 text-[13px] text-text-secondary ${className}`}
+    >
+      {children}
     </div>
-  )
+  );
 }
 
-export default CardFooter
+export default CardFooter;

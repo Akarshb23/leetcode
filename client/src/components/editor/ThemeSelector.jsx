@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { ChevronDown } from "lucide-react";
 
 function ThemeSelector() {
   return (
-    <div>
-      
-    </div>
-  )
+    <button className="flex h-7 items-center gap-1.5 rounded border border-[#3a3a3a] bg-[#262626] px-2.5 text-[12px] text-text-secondary hover:text-white cursor-pointer">
+      Dark
+      <ChevronDown size={12} />
+    </button>
+  );
 }
 
-export default ThemeSelector
+export default ThemeSelector;

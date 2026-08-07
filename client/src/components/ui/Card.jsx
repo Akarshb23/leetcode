@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Card() {
+function Card({ className = "", children }) {
   return (
-    <div>
-      
+    <div
+      className={`rounded-lg border border-border bg-surface ${className}`}
+    >
+      {children}
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

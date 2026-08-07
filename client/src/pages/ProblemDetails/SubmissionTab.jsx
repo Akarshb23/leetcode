@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import SubmissionHistory from "../../components/problem/SubmissionHistory";
 
 function SubmissionTab() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <SubmissionHistory />;
 }
 
-export default SubmissionTab
+export default SubmissionTab;

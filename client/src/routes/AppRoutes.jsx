@@ -12,13 +12,22 @@ import Contests from "../pages/Contests/Contests";
 import ContestDetails from "../pages/ContestDetails/ContestDetails";
 import Discuss from "../pages/Discuss/Discuss";
 import Profile from "../pages/Profile/Profile";
+import Settings from "../pages/Settings/Settings";
 
+import AdminDashboard from "../pages/Admin/Dashboard";
+import AdminProblems from "../pages/Admin/ManageProblems";
+import AdminCreateProblem from "../pages/Admin/CreateProblem";
+import AdminEditProblem from "../pages/Admin/EditProblem";
+import AdminUsers from "../pages/Admin/ManageUsers";
+import AdminContests from "../pages/Admin/ManageContests";
+import AdminReports from "../pages/Admin/Reports";
+
+import NotFound from "./NotFound";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-   
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
 
@@ -37,16 +46,25 @@ function AppRoutes() {
           <Route path="/discuss" element={<Discuss />} />
 
           <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings />} />
 
-          {/* <Route path="/settings" element={<Settings />} /> */}
+          {/* Admin */}
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/problems" element={<AdminProblems />} />
+          <Route path="/admin/create-problem" element={<AdminCreateProblem />} />
+          <Route
+            path="/admin/edit-problem/:id"
+            element={<AdminEditProblem />}
+          />
+          <Route path="/admin/users" element={<AdminUsers />} />
+          <Route path="/admin/contests" element={<AdminContests />} />
+          <Route path="/admin/reports" element={<AdminReports />} />
         </Route>
 
-      
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-     
-        {/* <Route path="/admin" element={<Admin />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

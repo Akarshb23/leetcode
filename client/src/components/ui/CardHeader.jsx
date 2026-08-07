@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
 
-function CardHeader() {
+function CardHeader({ title, className = "", children }) {
   return (
-    <div>
-      
+    <div
+      className={`border-b border-border px-4 py-3 ${className}`}
+    >
+      {title && (
+        <h3 className="text-[14px] font-medium text-text-primary">
+          {title}
+        </h3>
+      )}
+
+      {children}
     </div>
-  )
+  );
 }
 
-export default CardHeader
+export default CardHeader;

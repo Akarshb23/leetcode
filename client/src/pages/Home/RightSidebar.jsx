@@ -6,83 +6,98 @@ import Banner from "../../assets/images/banner.png";
 
 function RightSidebar() {
   return (
-    <div className="rounded-lg border border-[rgba(255,255,255,0.07)] bg-[#262626] p-4">
-      <img
-        src={Banner}
-        alt="Banner"
-        className="mb-3 w-full rounded"
-      />
-
-      <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.05)] py-3">
-        <div className="space-y-1.5">
-          <h2 className="text-[15px] font-medium text-white">
-            LeetCode Contest
-          </h2>
-
-          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
-            Participate and win prizes.
-          </p>
-
-          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
-            Join Contest
-          </button>
-        </div>
-
-        <img
-          src={Trophy}
-          alt="Trophy"
-          className="h-16 w-16 object-contain"
-        />
+    <div className="space-y-4">
+      {/* Banner */}
+      <div className="overflow-hidden rounded-lg border border-[#2e2e2e] bg-[#262626]">
+        <img src={Banner} alt="Banner" className="w-full" />
       </div>
 
-
-      <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.05)] py-3">
-        <div className="space-y-1.5">
-          <h2 className="text-[15px] font-medium text-white">
-            Discuss Now
+      {/* Daily Challenge */}
+      <div className="rounded-lg border border-[#2e2e2e] bg-[#262626]">
+        <div className="flex items-center justify-between border-b border-[#2e2e2e] px-4 py-3">
+          <h2 className="text-[14px] font-medium text-white">
+            Daily Challenge
           </h2>
 
-          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
-            Share interview questions.
-          </p>
-
-          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
-            Get solutions.
-          </p>
-
-          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
-            Let's Discuss
-          </button>
+          <span className="rounded bg-[#1f3d3a] px-2 py-0.5 text-[10px] font-medium text-[#00b8a3]">
+            Easy
+          </span>
         </div>
 
-        <img
-          src={Msg}
-          alt="Message"
-          className="h-16 w-16 object-contain"
-        />
+        <div className="space-y-2 p-4">
+          <p className="text-[14px] font-medium text-white">
+            1342. Number of Operations to Make Network Connected
+          </p>
+
+          <p className="text-[12px] text-text-muted">
+            Practice the daily problem to keep your streak.
+          </p>
+
+          <button className="rounded bg-[#3a3a3a] px-3 py-1.5 text-[12px] text-text-secondary hover:bg-[#4a4a4a] hover:text-white cursor-pointer">
+            Solve Challenge
+          </button>
+        </div>
       </div>
 
-      {/* LeetCoins */}
-      <div className="flex items-center justify-between py-3">
-        <div className="space-y-1.5">
-          <h2 className="text-[15px] font-medium text-white">
-            Shop with LeetCoins
-          </h2>
+      {/* Contest Card */}
+      <div className="rounded-lg border border-[#2e2e2e] bg-[#262626] p-4">
+        <div className="flex items-center justify-between">
+          <div className="space-y-1.5">
+            <h2 className="text-[14px] font-medium text-white">
+              LeetCode Contest
+            </h2>
 
-          <p className="text-[13px] leading-[18px] text-[#b3b3b3]">
-            Use your points in our LeetCode Store.
-          </p>
+            <p className="text-[12px] text-text-secondary">
+              Participate and win prizes.
+            </p>
 
-          <button className="rounded-[3px] bg-[#3a3a3a] px-3 py-1.5 text-[13px] text-[#d9d9d9] hover:bg-[#4a4a4a]">
-            Redeem
-          </button>
+            <button className="rounded bg-[#3a3a3a] px-3 py-1.5 text-[12px] text-text-secondary hover:bg-[#4a4a4a] hover:text-white cursor-pointer">
+              Join Contest
+            </button>
+          </div>
+
+          <img src={Trophy} alt="Trophy" className="h-16 w-16 object-contain" />
         </div>
+      </div>
 
-        <img
-          src={Coin}
-          alt="Coin"
-          className="h-16 w-16 object-contain"
-        />
+      {/* Discuss Card */}
+      <div className="rounded-lg border border-[#2e2e2e] bg-[#262626] p-4">
+        <div className="flex items-center justify-between">
+          <div className="space-y-1.5">
+            <h2 className="text-[14px] font-medium text-white">Discuss Now</h2>
+
+            <p className="text-[12px] text-text-secondary">
+              Share interview questions, get solutions.
+            </p>
+
+            <button className="rounded bg-[#3a3a3a] px-3 py-1.5 text-[12px] text-text-secondary hover:bg-[#4a4a4a] hover:text-white cursor-pointer">
+              Let's Discuss
+            </button>
+          </div>
+
+          <img src={Msg} alt="Message" className="h-16 w-16 object-contain" />
+        </div>
+      </div>
+
+      {/* LeetCoins Card */}
+      <div className="rounded-lg border border-[#2e2e2e] bg-[#262626] p-4">
+        <div className="flex items-center justify-between">
+          <div className="space-y-1.5">
+            <h2 className="text-[14px] font-medium text-white">
+              Shop with LeetCoins
+            </h2>
+
+            <p className="text-[12px] text-text-secondary">
+              Use your points in our LeetCode Store.
+            </p>
+
+            <button className="rounded bg-[#3a3a3a] px-3 py-1.5 text-[12px] text-text-secondary hover:bg-[#4a4a4a] hover:text-white cursor-pointer">
+              Redeem
+            </button>
+          </div>
+
+          <img src={Coin} alt="Coin" className="h-16 w-16 object-contain" />
+        </div>
       </div>
     </div>
   );

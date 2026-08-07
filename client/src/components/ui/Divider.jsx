@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function Divider() {
-  return (
-    <div>
-      
-    </div>
-  )
+function Divider({ className = "" }) {
+  return <hr className={`border-border ${className}`} />;
 }
 
-export default Divider
+export default Divider;
