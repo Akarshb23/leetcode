@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProblemList() {
+function Pagination() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function ProblemList() {
   )
 }
 
-export default ProblemList
+export default Pagination
